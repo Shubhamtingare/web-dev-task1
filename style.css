@@ -1,0 +1,204 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+.container {
+  height: fit-content;
+  text-align: center;
+  border: 2px solid black;
+  padding: 10px 80px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+}
+
+.company_name {
+  margin: 50px auto;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 40px;
+  background-color: purple;
+  color: white;
+}
+.heading {
+  color: rgb(88, 3, 3);
+  text-align: center;
+}
+.desc {
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-inline: 28px;
+  text-align: left;
+}
+.team1,
+.team2 {
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(161, 146, 161);
+}
+.team_name {
+  margin: 50px auto;
+  text-align: center;
+  width: fit-content;
+  padding: 10px 40px;
+  background-color: purple;
+  color: white;
+  padding-bottom: 10px;
+}
+h1 {
+  padding-top: 50px;
+  border-top: 2px dotted rgb(136, 1, 136);
+}
+.first-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+.first-row div {
+  width: 210px;
+}
+.first-row p,
+.second-row p {
+  margin-top: -12px;
+  font-size: 17px;
+}
+.second-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.second-row div {
+  width: 230px;
+}
+.emp_img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+h4 {
+  font-size: 21px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .company_name {
+    padding: 10px;
+    font-size: 25px;
+  }
+  .desc {
+    padding-inline: 32px;
+    text-align: left;
+    font-size: 15px;
+  }
+  .heading {
+    font-size: 25px;
+  }
+  .team_name {
+    font-size: 23px;
+    padding-inline: 20px;
+  }
+  .emp_img {
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+  }
+
+  .first-row div,
+  .second-row div {
+    width: calc(50% - 20px);
+    max-width: 150px;
+    margin: 10px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+  .first-row p,
+  .second-row p {
+    margin-top: -12px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .company_name {
+    padding: 10px;
+    font-size: 21px;
+  }
+  .desc {
+    padding-inline: 25px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .heading {
+    font-size: 21px;
+  }
+  .team_name {
+    font-size: 17px;
+    padding-inline: 17px;
+  }
+  .emp_img {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+  }
+
+  .first-row div,
+  .second-row div {
+    width: calc(50% - 20px);
+    max-width: 150px;
+    margin: 10px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+  .first-row p,
+  .second-row p {
+    margin-top: -12px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 10px;
+  }
+  .company_name {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .desc {
+    padding-inline: 25px;
+    text-align: left;
+    font-size: 11px;
+  }
+  .team_name {
+    font-size: 15px;
+    padding-inline: 15px;
+  }
+  .emp_img {
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+  }
+
+  .first-row div,
+  .second-row div {
+    width: calc(50% - 20px);
+    max-width: 150px;
+    margin: 10px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+  .first-row p,
+  .second-row p {
+    margin-top: -12px;
+    font-size: 9px;
+  }
+}
